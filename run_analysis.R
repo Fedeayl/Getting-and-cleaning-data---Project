@@ -40,5 +40,5 @@ data <-  data[, cnames]
 data <- aggregate( . ~ subject + activity, data = data, FUN = mean )
 
 # Save dataset
-write.table(data, "Tidy_data.txt")
+write.table(data, "Tidy_data.txt", row.names = FALSE, quote = FALSE)
 read.table("Tidy_data.txt")
